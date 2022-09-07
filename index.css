@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+}
+
+header .contact-menu {
+  background-color: black;
+  color: white;
+  padding: 1rem 1.5rem;
+  text-align: right;
+}
+
+header .main-menu {
+  color: white;
+  fill: white;
+  background-color: rgb(10, 105, 97);
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgb(2, 84, 85);
+}
+
+header .main-menu nav ul {
+  list-style: none;
+  display: none;
+}
+
+main .hero-form .hero {
+  width: 100%;
+  object-fit: contain;
+}
+
+main .hero-form .form-img {
+  width: 80vw;
+  height: 30vh;
+}
+
+main .primary-pitch {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .primary-pitch article {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 60%;
+}
+
+main .primary-pitch article h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+main .primary-pitch article h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+main .primary-pitch aside {
+  width: 90%;
+}
+
+main .below-the-fold {
+  padding: 2rem;
+  background-color: beige;
+}
+
+main .below-the-fold h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+main .below-the-fold artice {
+    width: 60%;
+
+}
+
+@media (min-width: 600px) {
+  main .hero-form .form-img {
+    display: block;
+  }
+}

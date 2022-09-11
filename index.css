@@ -1,25 +1,62 @@
+:root {
+  --dark-menu-color: rgb(26, 26, 26);
+  --dark-menu-text-color: white;
+  --header-background-color: rgb(2, 84, 85);
+  --header-border-color: rgb(65, 130, 131);
+  --main-background-color: rgb(255, 245, 232);
+}
+
+/*********************************			
+* GENERAL			
+*********************************/
+
 body {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+.logo-svg {
+  filter: invert();
+}
+
+/*********************************			
+* HEADER			
+*********************************/
+
 header .contact-menu {
-  background-color: black;
-  color: white;
+  background-color: var(--dark-menu-color);
+  color: var(--dark-menu-text-color);
   padding: 1rem 1.5rem;
   text-align: right;
 }
 
 header .main-menu {
-  color: white;
-  fill: white;
-  background-color: rgb(10, 105, 97);
+  color: var(--dark-menu-text-color);
+  fill: var(--dark-menu-text-color);
+  background-color: var(--header-background-color);
   padding: 1rem 1.5rem;
-  border-bottom: 1px solid rgb(2, 84, 85);
+  border-bottom: 1px solid var(--header-border-color);
 }
 
 header .main-menu nav ul {
   list-style: none;
   display: none;
+}
+
+/*********************************			
+* MAIN			
+*********************************/
+
+main aside {
+  width: 90%;
 }
 
 main .hero-form .hero {
@@ -56,16 +93,20 @@ main .primary-pitch article h2 {
   font-size: 1.3rem;
   font-weight: 400;
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-main .primary-pitch aside {
+/* main .primary-pitch aside {
   width: 90%;
-}
+} */
 
 main .below-the-fold {
   padding: 2rem;
-  background-color: beige;
+  background-color: var(--main-background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main .below-the-fold h2 {
@@ -74,9 +115,50 @@ main .below-the-fold h2 {
   text-align: center;
 }
 
-main .below-the-fold artice {
+main .below-the-fold article {
   width: 60%;
 }
+
+/* main .below-the-fold aside {
+  width: 90%;
+} */
+
+article img {
+  width: 100%;
+}
+
+main .email-cta h1 {
+  width: 80%;
+}
+
+main .email-cta img {
+  width: 100%;
+}
+
+/*********************************			
+* FOOTER			
+*********************************/
+
+footer {
+  background-color: var(--dark-menu-color);
+  color: var(--dark-menu-text-color);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .bottom-nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer img {
+  width: 20%;
+}
+
+/*********************************			
+* MEDIA QUERY			
+*********************************/
 
 @media (min-width: 600px) {
   main .hero-form .form-img {
